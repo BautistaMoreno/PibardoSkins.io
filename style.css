@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    background-color: #15171b;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;  /* ancho de la escrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 171, 16); /* color de la scrollbar */
+  border-radius: 20px; /* border radius de la misma*/
+}
+
+header { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.048);
+
+}
+
+#gallina, #gallina2 {
+    position: relative;
+    width: 5%;
+    transform: scaleX(-1);
+  }
+
+.logoynombre{
+  margin: 2%;
+  font-size: 10px;
+  font-family: "Anton SC", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+} 
+:hover.logoynombre{
+  text-shadow: rgba(255,162,0,0.9) 0px 0px 39px;
+}
+#logo{
+  margin: 3%;
+  border-radius: 10px;
+  height: 55px;
+} 
+
+#nombre {
+  color: orange;
+  margin: 0;
+  height: 65px;
+}
+
+#carrito > img {
+  height: 45px;
+  cursor: pointer;
+} 
+
+.supercontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.container-carousel {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carruseles {
+  width: 1000%;
+  height: 100%;
+  display: flex;
+}
+
+.slider-section {
+  width: calc(100% / 10);
+  height: 100%;
+}
+
+.slider-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translate(0,-50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #333333d4;
+  color: #fff;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+#video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.tienda {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding:10% 0% 2%;
+}
+
+.item {
+  display: inline-block;
+  margin: 0px 20px 80px;
+  text-align: center;
+}
+
+.item > img.enlarged{
+  transform: scale(1.7);
+  background-color: #15171b;
+}
+
+.item img {
+  border: 1px solid #ccc;
+  width: 218px;
+  height: 163px;
+  transition: transform .2s ease;
+}
+
+.item p {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.precio{
+  padding-top: 2%;
+}
+
+
+.details {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 195vh;
+  height: 80vh;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.details-image {
+  width: 40%;
+  height: 60%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Estilo para el botón de cerrar */
+#close-details {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+#close-details:hover {
+  color: #555;
+}
+
+
+
+footer {
+  margin-top: 5%;
+  background-color: black; /* Color de fondo del rectángulo */
+  text-align: center;
+  font-size: 2vh;
+  color: orange;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-container a {
+  color: orange;
+  text-decoration: none;
+  font-size: 1.8vh;
+  transition: color 0.3s;
+}
+
+.footer-container a:hover {
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.5vh;
+}
+
+@media (max-width: 600px) {
+  .header {
+      flex-direction: column;
+  }
+
+  .logoynombre, #carrito {
+      text-align: center;
+      padding: 5px;
+  }
+}
