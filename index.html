@@ -140,15 +140,47 @@
             <p class = "item-title">Black Nile</p>
             <p class="item-price">$3.72</p>
         </div>
+        <div class="item" onclick="showDetails(this)" onclick="showDetails(this)">
+            <img src="SKINS/arma15.png" alt="" class="item-image">
+            <p class = "item-title">Dragon Lore</p>
+            <p class="item-price">$7 000</p>
+        </div>
+        <div class="item" onclick="showDetails(this)" onclick="showDetails(this)">
+            <img src="SKINS/arma16.png" alt="" class="item-image">
+            <p class = "item-title">Kukri Fade</p>
+            <p class="item-price">$850</p>
+        </div>
+        <div class="item" onclick="showDetails(this)" onclick="showDetails(this)">
+            <img src="SKINS/arma17.png" alt="" class="item-image">
+            <p class = "item-title">Skeleton Blue Gem</p>
+            <p class="item-price">$6 500</p>
+        </div>
+        <div class="item" onclick="showDetails(this)" onclick="showDetails(this)">
+            <img src="SKINS/skin18.png" alt="" class="item-image">
+            <p class = "item-title">Pandora's Box</p>
+            <p class="item-price">$4 000</p>
+        </div>
+        <div class="item" onclick="showDetails(this)" onclick="showDetails(this)">
+            <img src="SKINS/skin19.png" alt="" class="item-image">
+            <p class = "item-title">Sr. Bloody Darryl</p>
+            <p class="item-price">$60.20</p>
+        </div>
+        <div class="item" onclick="showDetails(this)" onclick="showDetails(this)">
+            <img src="SKINS/skin20.png" alt="" class="item-image">
+            <p class = "item-title">Primeiro tenente</p>
+            <p class="item-price">$27.80</p>
+        </div>
     </div>
 
     <div id="details" class="details">
-        <button id="close-details" onclick="closeDetails()">✖</button>
         <img id="details-image" src="" alt="Item Image" class="details-image">
         <h2 id="details-title">Título del Artículo</h2>
         <p id="details-description">Descripción del artículo.</p>
         <p id="details-price">$0.00</p>
-        <button id="add-to-cart" onclick="addToCart()">Agregar al carrito</button>
+        <div id="buttons">
+            <button id="close-details" onclick="closeDetails()">Cerrar</button>
+            <button id="add-to-cart" onclick="addToCart()">Agregar al carrito</button>
+        </div>
     </div>
     
     </main>
@@ -164,130 +196,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
-<!-- La imagen se encuentra en la parte superior.
-Debajo de la imagen se muestra el nombre, el precio y un botón.
-Usaremos un área expandible para mostrar la información adicional.
-Añadiremos una animación que agrande el objeto cuando el cursor pase por encima.
-Aquí tienes el código actualizado:
-
-HTML
-html
-Copiar código
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostrar Información</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="item" onclick="showDetails(this)" onclick="showDetails(this)" onclick="showDetails(this)">
-            <img src="ruta-de-tu-imagen.jpg" alt="Imagen del Producto" class="item-image" onclick="toggleInfo()">
-            <div id="info" class="info hidden">
-                <h2>Nombre del Producto</h2>
-                <p>Precio: $XX.XX</p>
-                <button onclick="addToCart()">Añadir al Carrito</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-CSS (styles.css)
-css
-Copiar código
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    text-align: center;
-}
-
-.item {
-    display: inline-block;
-    border: 1px solid #ddd;
-    padding: 10px;
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-.item:hover {
-    transform: scale(1.05);
-}
-
-.item-image {
-    width: 200px;
-    height: auto;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-.info {
-    margin-top: 10px;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
-    opacity: 0;
-}
-
-.info.show {
-    max-height: 300px; /* Ajusta según el contenido */
-    opacity: 1;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-JavaScript (script.js)
-javascript
-Copiar código
-function toggleInfo() {
-    const info = document.getElementById('info');
-    if (info.classList.contains('show')) {
-        info.classList.remove('show');
-    } else {
-        info.classList.add('show');
-    }
-}
-
-function addToCart() {
-    alert('¡Añadido al carrito!');
-}
-Explicación:
-HTML:
-
-La estructura mantiene la imagen y el área de información adicional. La imagen tiene un onclick para activar el área expandible.
-CSS:
-
-.item:hover añade una animación que agranda el objeto cuando el cursor pasa por encima.
-.info tiene una animación para expandirse y contraerse. El área expandible tiene una transición en max-height para crear un efecto de deslizamiento suave.
-.info.show es la clase que activa la visibilidad del área expandible.
-JavaScript:
-
-toggleInfo() alterna la visibilidad del área expandible al hacer clic en la imagen.
-addToCart() muestra una alerta al hacer clic en el botón "Añadir al Carrito". -->
