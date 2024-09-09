@@ -14,30 +14,65 @@ carrito.addEventListener("click", function(){
 })
 
 //area expandible
+const skinsData = {
+  "Black Lotus": 'https://steamcommunity.com/market/search?q=m4+loto+negro',
+  "Desert Eagle": "https://steamcommunity.com/market/search?q=coder+red+Desert+Eagle",
+  "Emperatriz": "https://steamcommunity.com/market/search?q=ak-47+Emperatriz",
+  "Nightmare": "https://steamcommunity.com/market/search?q=m4+Nightmare",
+  "Print Stream": "https://steamcommunity.com/market/search?q=+USP-S+%7C+Printstream",
+  "Nightwish": "https://steamcommunity.com/market/search?q=ak+Nightwish",
+  "Blue Laminate": "https://steamcommunity.com/market/search?q=AK-47+%7C+Laminado+azul",
+  "Decimator": "https://steamcommunity.com/market/search?q=+M4A1-S+%7C+Diezmador",
+  "Bloodsport": "https://steamcommunity.com/market/search?q=AK-47+%7C+Contacto+sangriento",
+  "Black Nile": "https://steamcommunity.com/market/search?q=AWP+%7C+Nilo+negro",
+  "Sr. Bloody Darryl":"https://steamcommunity.com/market/search?q=Sr.+Bloody+Darryl",
+  "Primeiro tenente":"https://steamcommunity.com/market/search?q=Primeiro+tenente"
+};
+
+
 function showDetails(item) {
   // Obtener los detalles del artículo
   const imageSrc = item.querySelector('.item-image').src;
   const title = item.querySelector('.item-title').textContent;
   const price = item.querySelector('.item-price').textContent;
 
-  const titlesList = ["Karambit","M9 Bayonet","M4A1-S","Desert Eagle","AK-47", "Nightmare", "USP-S", "Nightwish", "The Emperor", "Decimator", "Fade", "Mjölnir", "Bloodsport", "Black Nile"]
-  const descriptionsList = ["descripción de la karambit", "descripción 2"]
-
   // Actualizar el contenido del detalle
   document.getElementById('details-image').src = imageSrc;
   document.getElementById('details-title').textContent = title;
-  let position = titlesList.indexOf(title)
 
-  document.getElementById('details-description').textContent = descriptionsList[position];
   document.getElementById('details-price').textContent = price;
+ 
+  let priceInt = parseInt(price.slice(1))
+  console.log(priceInt)
+  
+  let detailBuyButton = document.getElementById('buy');
+
+  // Configurar el botón según el precio
+  if (priceInt > 100) {
+    detailBuyButton.textContent = "Agregar al carrito";
+    detailBuyButton.onclick = addToCart; // Asignar la función sin ejecutarla
+  } else {
+    detailBuyButton.textContent = "Comprar en Steam";
+    detailBuyButton.onclick = function() {
+      goToOtherSite(skinsData[title]); // Pasar la URL asociada a la skin
+    }; // Pasar la URL asociada a la skin
+    document.getElementById('details-price').style.visibility= 'hidden'
+  }
 
   // Mostrar el contenedor de detalles
   document.getElementById('details').style.display = 'block';
 }
 
+function goToOtherSite(url) {
+  const newTab = window.open(url, '_blank'); // Abre el enlace en una nueva pestaña
+  newTab.focus(); // Enfoca la nueva pestaña
+}
+
+
+
 function addToCart() {
   alert('Artículo agregado al carrito.');
-  // Aquí podrías agregar lógica para agregar al carrito
+  // Agregar lógica para agregar al carrito
   closeDetails();
 }
 

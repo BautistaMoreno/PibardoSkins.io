@@ -49,6 +49,7 @@ header {
 :hover.logoynombre{
   text-shadow: rgba(255,162,0,0.9) 0px 0px 39px;
 }
+
 #logo{
   margin: 3%;
   border-radius: 10px;
@@ -58,7 +59,7 @@ header {
 #nombre {
   color: orange;
   margin: 0;
-  height: 65px;
+  height: 70px;
 }
 
 #carrito > img {
@@ -207,6 +208,7 @@ button {
   font-size: 16px;
   border-radius: 5px;
 }
+
 
 button:hover {
   background-color: #0056b3;
