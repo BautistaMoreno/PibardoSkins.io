@@ -29,16 +29,18 @@ header {
 
 }
 
-#gallina, #gallina2 {
-    position: relative;
-    width: 5%;
-    transform: scaleX(-1);
-  }
+@font-face {
+    font-family: 'High Speed';
+    src: url('Fonts/High\ Speed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+  
 .logoynombre{
   margin: 2%;
   font-size: 10px;
-  font-family: "Anton SC", sans-serif;
+  font-family: 'High Speed', sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -57,9 +59,11 @@ header {
 } 
 
 #nombre {
+  font-family: 'High Speed', sans-serif;
   color: orange;
-  margin: 0;
   height: 70px;
+  display: block auto;
+  margin: 0;
 }
 
 #carrito > img {
@@ -67,7 +71,8 @@ header {
   cursor: pointer;
 } 
 
-.supercontainer{
+
+.supercontainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -76,20 +81,20 @@ header {
 
 .container-carousel {
   position: relative;
-  width: 500px;
-  height: 300px;
+  width: 450px;
+  height: 450px;
   border-radius: 15px;
   overflow: hidden;
 }
 
 .carruseles {
-  width: 1000%;
+  width: 400%;
   height: 100%;
   display: flex;
 }
 
 .slider-section {
-  width: calc(100% / 10);
+  width: 25%;
   height: 100%;
 }
 
@@ -105,10 +110,10 @@ header {
   display: flex;
   position: absolute;
   top: 50%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: transparent;
   border-radius: 50%;
-  padding: 5px;
+  padding: 10px;
   font-weight: 600;
   cursor: pointer;
   color: #ffffff81;
@@ -117,18 +122,12 @@ header {
   user-select: none;
 }
 
-.btn-left:hover,
-.btn-right:hover {
-  background-color: #333333d4;
-  color: #fff;
-}
-
 .btn-left {
-  left: 10px;
+  left: -10px;
 }
 
 .btn-right {
-  right: 10px;
+  right: -10px;
 }
 
 #video {
@@ -279,3 +278,7 @@ footer p {
       padding: 5px;
   }
 }
+
+
+
+
