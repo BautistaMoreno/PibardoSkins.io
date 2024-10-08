@@ -1,94 +1,70 @@
-// HamburgerMenu.js (Componente en React)
+# Getting Started with Create React App
 
-import React, { useState } from 'react';
-import './HamburgerMenu.css'; // Para los estilos CSS
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-const HamburgerMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+## Available Scripts
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+In the project directory, you can run:
 
-  return (
-    <div className="menu-container">
-      <div className="hamburger" onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
-      {isOpen && (
-        <ul className="menu-options">
-          <li>Option 1</li>
-          <li>Option 2</li>
-          <li>Option 3</li>
-        </ul>
-      )}
-    </div>
-  );
-};
+### `npm start`
 
-export default HamburgerMenu;
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-///////////////////////////////////////////////////////
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-// HamburgerMenu.css (Estilos CSS)
+### `npm test`
 
-.menu-container {
-  position: relative;
-}
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-.hamburger {
-  cursor: pointer;
-  width: 30px;
-  height: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+### `npm run build`
 
-.bar {
-  width: 100%;
-  height: 4px;
-  background-color: #333;
-  transition: all 0.3s ease;
-}
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-.menu-options {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-  background-color: #f1f1f1;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100px;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-.menu-options li {
-  padding: 10px;
-  cursor: pointer;
-}
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-.menu-options li:hover {
-  background-color: #ddd;
-}
+### `npm run eject`
 
-///////////////////////////////////////////////////////
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-// App.js (Aplicación principal)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-import React from 'react';
-import HamburgerMenu from './HamburgerMenu';
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-function App() {
-  return (
-    <div className="App">
-      <HamburgerMenu />
-    </div>
-  );
-}
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-export default App;
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

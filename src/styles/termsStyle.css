@@ -1,0 +1,86 @@
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 171, 16);
+    border-radius: 20px;
+}
+
+.logo-header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.048);
+}
+
+.logoynombre{
+    font-size: 10px;
+    font-family: "Anton SC", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+
+:hover.logoynombre{
+    text-shadow: rgba(255,162,0,0.9) 0px 0px 39px;
+}
+
+#logo{
+    margin: 3%;
+    border-radius: 10px;
+    height: 55px;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: rgba(255,162,0,0.9);
+    margin: 0px auto;
+    background: #15171b;
+    padding: 10px;
+}
+
+.container h1.h1Terms,
+.container h2.h1Terms {
+    color: rgba(255,162,0,0.9);
+    font-size: 30px;
+}
+
+.term-description {
+    color: rgba(255,162,0,0.9);
+}
+
+a.contact-email {
+    color: rgba(255,162,0,0.9);
+    text-decoration: none;
+}
+
+a.contact-email:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 2%;
+    background-color: #0d0e11;
+    text-align: center;
+    color: orange;
+    padding: 30px 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 1.5vh;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+}
