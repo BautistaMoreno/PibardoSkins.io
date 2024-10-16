@@ -39,13 +39,17 @@ body {
 }
 
 .light-mode {
-  background-color: #ffffff;
-  color: #101010;
+  background: repeating-linear-gradient(45deg, #c2bcbc 0, #c2bcbc 10%, transparent 0, transparent 50%);
+  background-size: 6em 6em;
+  background-color: #aeabab;
+  opacity: 1
 }
 
 .dark-mode {
-  background-color: #15171b;
-  color: #fff;
+  background: repeating-linear-gradient(135deg, #131212 0, #131212 10%, transparent 0, transparent 50%);
+  background-size: 6em 6em;
+  background-color: #171616;
+  opacity: 1
 }
 
 header {
@@ -54,7 +58,7 @@ header {
 }
 
 .light-mode header {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .dark-mode header {
@@ -129,9 +133,21 @@ header {
   align-items: center;
 }
 
+@keyframes shake {
+  0% { transform: translate(0); }
+  25% { transform: translate(-5px, 0); }
+  50% { transform: translate(5px, 0); }
+  75% { transform: translate(-5px, 0); }
+  100% { transform: translate(0); }
+}
+
 #carrito > img {
   height: 45px;
   cursor: pointer;
+}
+
+#carrito:hover {
+  animation: shake 0.5s ease;
 }
 
 /* carrusel */
@@ -177,8 +193,7 @@ header {
 }
 
 .tienda {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -187,11 +202,13 @@ header {
 }
 
 .item img {
+  background-color: #000000;
   border: 1px solid #ccc;
   width: 218px;
   height: 163px;
   transition: transform 0.3s ease;
   border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.932), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .item {
@@ -233,10 +250,13 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 140vh;
-  height: 75vh;
-  background: radial-gradient(#3f3d3d, #000000);
-  border: 1px solid #636363;
-  border-radius: 50%;
+  height: 85vh;
+  background-color: #000000;
+  opacity: 1;
+  background-color: #111010;
+  opacity: 1;
+  background: linear-gradient(135deg, #17151555 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #171515 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #17151555 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #171515 25%, #111010 25%) 0px 0/ 80px 80px;  border: 1px solid #636363;
+  border-radius: 95px;
   padding: 100px 15px 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -245,7 +265,12 @@ header {
 }
 
 .light-mode .details {
-  background: radial-gradient(#9c9c9c, #ffffff);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.55) 25%, transparent 25%) -40px 0/ 80px 80px, 
+  linear-gradient(225deg, rgba(255, 255, 255, 1) 25%, transparent 25%) -40px 0/ 80px 80px, 
+  linear-gradient(315deg, rgba(255, 255, 255, 0.55) 25%, transparent 25%) 0px 0/ 80px 80px, 
+  linear-gradient(45deg, rgba(255, 255, 255, 1) 25%, rgba(240, 240, 240, 1) 25%) 0px 0/ 80px 80px;  
+border: 1px solid #cccccc;
+
   color: #000000;
 }
 
@@ -330,7 +355,7 @@ button:hover {
 }
 
 footer {
-  margin-top: 5%;
+  margin: 0%;
   font-size: 2vh;
   bottom: 0;
   font-family: sans-serif;
@@ -389,4 +414,8 @@ footer p {
     text-align: center;
     padding: 5px;
   }
+}
+
+#skin-1 {
+  background: linear-gradient(to top, rgba(131, 50, 163, 0.8)), rgba(255, 126, 95, 0) 70%;
 }

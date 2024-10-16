@@ -1,0 +1,10 @@
+/* src/App.css */
+.app-container {
+    display: inline;
+  }
+  
+  .content {
+    flex: 1; /* Esto permite que el contenido ocupe el espacio restante */
+    padding: 20px; /* Espaciado alrededor del contenido */
+  }
+  

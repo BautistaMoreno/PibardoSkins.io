@@ -14,7 +14,7 @@ const Header = () => {
         <img id="logo" src={csLogo} alt="cslogo" />
         <h1 id="nombre">Pibardo <br /> Skins</h1>
       </div>
-      <ThemeToggle />
+     
       <div id="carrito" onClick={() => alert("Aún no agregamos un carrito.")}>
         <img src={carrito} alt="carrito" />
       </div>
