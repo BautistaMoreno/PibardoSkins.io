@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/PibardoSkins.io/static/css/main.25ca2dfd.css",
-    "main.js": "/PibardoSkins.io/static/js/main.8c5f1e07.js",
+    "main.js": "/PibardoSkins.io/static/js/main.c2c702b0.js",
     "static/js/453.ddbf9546.chunk.js": "/PibardoSkins.io/static/js/453.ddbf9546.chunk.js",
-    "static/media/cs2_header.mp4": "/PibardoSkins.io/static/media/cs2_header.4de3a82e5e39aec03bbc.mp4",
+    "static/media/cs2_header.mp4": "/PibardoSkins.io/static/media/cs2_header.c49e499b6e5efc15b159.mp4",
     "static/media/skin18.png": "/PibardoSkins.io/static/media/skin18.1672f0beaef19516f225.png",
     "static/media/asistencia.png": "/PibardoSkins.io/static/media/asistencia.be30cf1aa409d17b9b07.png",
     "static/media/arma2.png": "/PibardoSkins.io/static/media/arma2.4b841c6fe42764594ec7.png",
@@ -37,11 +37,11 @@
     "static/media/slick.woff": "/PibardoSkins.io/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/PibardoSkins.io/index.html",
     "main.25ca2dfd.css.map": "/PibardoSkins.io/static/css/main.25ca2dfd.css.map",
-    "main.8c5f1e07.js.map": "/PibardoSkins.io/static/js/main.8c5f1e07.js.map",
+    "main.c2c702b0.js.map": "/PibardoSkins.io/static/js/main.c2c702b0.js.map",
     "453.ddbf9546.chunk.js.map": "/PibardoSkins.io/static/js/453.ddbf9546.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25ca2dfd.css",
-    "static/js/main.8c5f1e07.js"
+    "static/js/main.c2c702b0.js"
   ]
 }
