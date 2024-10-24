@@ -4,7 +4,7 @@ import ThemeProvider from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Terms from "./pages/Terms";
 import Contac from "./pages/Contac";
-import Sidebar from "./Sidebar"; 
+import Sidebar from "./components/Sidebar"; 
 import './App.css'; 
 
 function App() {
