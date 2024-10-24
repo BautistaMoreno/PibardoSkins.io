@@ -10,7 +10,7 @@ const Footer = () => (
       <a href="https://store.steampowered.com/" className="footer-link">
         <img src={steam} alt="Steam Icon" /> Steam
       </a>
-      <a href="#" className="footer-link">
+      <a href="/contacto" className="footer-link" target="_blank">
         <img src={contacto} alt="Contacto Icon" /> Contacto
       </a>
       <a href="https://github.com/BautistaMoreno/PibardoSkins.io" className="footer-link">
