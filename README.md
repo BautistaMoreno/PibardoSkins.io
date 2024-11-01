@@ -51,27 +51,22 @@ npm start
 
 8. Accede a la pagina web en tu navegador en http://localhost:3000.
 -----------------------------------------------------------------------------------------------------
-##Contribuciones
+
+###Contribuciones
 Las contribuciones son bienvenidas. Si deseas contribuir al proyecto, por favor sigue estos pasos:
 
 Haz un fork del repositorio.
 
-##Crea una nueva rama para tu función o corrección de errores:
-
-bash
+###Crea una nueva rama para tu función o corrección de errores:
 git checkout -b nombre-de-tu-rama
 
-##Realiza tus cambios y haz commit:
-
-bash
+###Realiza tus cambios y haz commit:
 git commit -m 'Descripción de los cambios'
 
-##Haz push a la rama:
-
-bash
+###Haz push a la rama:
 git push origin nombre-de-tu-rama
 
-##Abre un Pull Request.
+###Abre un Pull Request.
 
 Licencia
 Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
