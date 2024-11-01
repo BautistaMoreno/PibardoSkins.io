@@ -28,7 +28,7 @@ Para ejecutar el proyecto en tu máquina local, sigue estos pasos:
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com
+   git clone https://github.com/BautistaMoreno/PibardoSkins.io.git
 
 2. Navega al directorio del proyecto:
 cd nombre-del-repo
