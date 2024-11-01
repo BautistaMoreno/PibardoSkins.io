@@ -3,13 +3,11 @@ import "../styles/contacStyle.css";
 import csLogo from "../IMAGES/cslogo.jpg";
 
 const Contac = () => {
-    // Estados para manejar los valores del formulario
     const [nombre, setNombre] = useState('');
     const [apellido, setApellido] = useState('');
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
 
-    // Función para manejar el envío del formulario
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Formulario enviado:', { nombre, apellido, email, mensaje });
@@ -36,8 +34,6 @@ const Contac = () => {
 
             <div className="container">
                 <h2>Contacto - Pibardo Skins</h2>
-                <br></br>
-                <br></br>
                 <p>Para consultas, puedes comunicarte con nosotros:</p>
                 <p>Email: <a className="contact-email" href="mailto:soporte@pibardoskins.com">soporte@pibardoskins.com</a></p>
                 <p>Teléfono: +54 9 11 1234-5678</p>
@@ -90,9 +86,7 @@ const Contac = () => {
                 </p>
                 <p className="footer-text">Última Fecha de Modificaciones: 27/9/2024</p>
             </footer>
-            
         </>
-        
     );
 };
 

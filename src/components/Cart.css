@@ -1,0 +1,120 @@
+.cart {
+  width: 300px;
+  height: 100vh;
+  background-color: #444; /* Mismo color de fondo que el sidebar */
+  color: #ffffff; /* Color del texto */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0 10px 10px 0; 
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  font-family: 'Courier New', Courier, monospace; /* Tipografía igual al sidebar */
+}
+
+.cart.open {
+  transform: translateX(0);
+}
+
+.cart h2 {
+  margin-top: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.cart-item p {
+  margin: 0 10px;
+  flex-grow: 1;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 5px; /* Espacio entre botones */
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.purchase-button {
+  background: orange; /* Color del botón de compra */
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Espacio adicional para el botón de compra */
+}
+
+.purchase-button:hover {
+  background-color: #ffcc00; /* Color al pasar el ratón */
+}
+
+/* Estilo para la cruz de eliminar */
+.remove-icon {
+  color: red; /* Color de la cruz */
+  font-size: 20px; /* Tamaño de la cruz */
+  cursor: pointer;
+  margin-left: 10px; /* Espacio entre el texto y la cruz */
+  transition: color 0.3s;
+}
+
+.remove-icon:hover {
+  color: darkred; /* Color al pasar el ratón */
+}
+
+/* Contenedor para los botones */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los botones */
+  margin-top: 10px; /* Margen superior para separar de los items */
+}
+
+/* Estilo para el botón de cerrar */
+.close-button {
+  background: rgba(255, 255, 255, 0.1); /* Fondo del botón de cerrar */
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Color al pasar el ratón */
+}
+
+.total {
+    font-size: 18px; /* Tamaño de fuente para el total */
+    margin-top: 10px; /* Espacio superior */
+    color: #ffffff; /* Color del texto */
+  }
+
+.light-mode .cart {
+    background-color: rgb(127, 127, 133);;
+}

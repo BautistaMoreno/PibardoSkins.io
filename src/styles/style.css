@@ -54,7 +54,7 @@ body {
 
 header {
   padding: 20px;
-  transition: background-color 0.3s ease;
+  background-color: transparent;
 }
 
 .light-mode header {
@@ -62,7 +62,7 @@ header {
 }
 
 .dark-mode header {
-  background-color: #15171b;
+  background-color: transparent;
 }
 
 .light-mode #nombre {
@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb {
 
 header {
   padding: 20px;
-  transition: background-color 0.3s ease;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -366,6 +366,10 @@ footer {
   width: 100%;
 }
 
+.light-mode footer {
+  background-color: #d1cbcb
+}
+
 .footer-link {
   color: #f1f1f1;
   text-decoration: none;
@@ -402,6 +406,14 @@ footer p {
   margin: 0;
   font-size: 1rem;
   color: #b0b0b0;
+}
+
+.light-mode .footer-container {
+  color: #101010;
+}
+
+.light-mode footer p {
+  color: #131212;
 }
 
 @media (max-width: 600px) {

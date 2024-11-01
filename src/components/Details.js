@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import '../styles/style.css';
 
-const Details = ({ item, onClose }) => {
+const Details = ({ item, onClose, addToCart }) => {
   const handleBuyClick = () => {
     if (typeof item.price === "string" && item.price.includes("$")) {
-      alert("Artículo agregado al carrito.");
-      // agregar la lógica para agregar al carrito
+      addToCart(item); // Llama a la función para agregar al carrito
+      alert(`${item.title} agregado al carrito.`);
       onClose();
     } else {
       window.open(item.link, "_blank"); 

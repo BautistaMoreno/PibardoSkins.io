@@ -1,11 +1,10 @@
-// Header.js
 import React, { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 import csLogo from '../IMAGES/cslogo.jpg';
 import carrito from '../IMAGES/carrito.png';
 import ThemeToggle from './ThemeToggle';
 
-const Header = () => {
+const Header = ({ toggleCart }) => { // Recibe toggleCart como prop
   const { isLightTheme } = useContext(ThemeContext);
 
   return (
@@ -15,7 +14,7 @@ const Header = () => {
         <h1 id="nombre">Pibardo <br /> Skins</h1>
       </div>
      
-      <div id="carrito" onClick={() => alert("Aún no agregamos un carrito.")}>
+      <div id="carrito" onClick={toggleCart}>
         <img src={carrito} alt="carrito" />
       </div>
     </header>

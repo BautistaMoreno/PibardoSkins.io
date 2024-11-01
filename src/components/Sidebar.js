@@ -71,17 +71,7 @@ const Sidebar = () => {
               </ul>
             )} */}
           </li>
-          <li>
-            <button onClick={() => toggleSubMenu("opcion3")}>
-              <FontAwesomeIcon icon={faCog} /> Opción 3
-            </button>
-            {subMenuOpen["opcion3"] && (
-              <ul className="submenu">
-                <li>Subopción 3.1</li>
-                <li>Subopción 3.2</li>
-              </ul>
-            )}
-          </li>
+          
         </ul>
         <div className="theme-toggle-section">
           <ThemeToggle />

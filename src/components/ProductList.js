@@ -20,7 +20,7 @@ import skin18 from '../SKINS/skin18.png';
 import skin19 from '../SKINS/skin19.png';
 import skin20 from '../SKINS/skin20.png';
 
-// Definición de productos con la nueva propiedad category
+// Definición de productos
 const products = [
   { id: 1, title: 'Karambit', price: '$1845', img: arma1, category: 'yellow' },
   { id: 2, title: 'M9 Bayoneta', price: '$1717', img: arma2, originalPrice: '$2146', discount: 0.25, category: 'yellow' },

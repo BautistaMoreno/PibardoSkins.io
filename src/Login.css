@@ -1,0 +1,53 @@
+h2 {
+  color: orange;
+  font-family: sans-serif;
+}
+
+.login-container {
+  /* Estilos del contenedor del login */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background-color: #15171b;
+}
+
+.login-box {
+  background-color: rgba(30, 30, 30, 0.8); /* Fondo semi-transparente para la caja */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+  width: 300px; /* Ancho fijo de la caja */
+}
+
+.login-container .form-group {
+  margin-bottom: 15px;
+}
+
+.login-container label {
+  color: orange;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.login-container input {
+  color: orange;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid orange;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 100%; /* Para que el input ocupe todo el ancho de la caja */
+}
+
+.login-container button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%; /* Botón ocupa todo el ancho de la caja */
+}
+
+/* Asegúrate de que todos los estilos del login estén bajo .login-container */

@@ -52,6 +52,7 @@
   padding-top: 70px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px 0 0 10px; 
+  overflow: hidden;
 }
 
 .sidebar.open {
@@ -125,4 +126,8 @@ li button:hover{
 
 .theme-toggle-button:hover {
   background: #ffcc00; 
+}
+
+.light-mode .sidebar {
+  background-color: rgb(127, 127, 133);
 }
