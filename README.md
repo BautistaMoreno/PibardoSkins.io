@@ -28,7 +28,7 @@ Para ejecutar el proyecto en tu máquina local, sigue estos pasos:
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/nombre-del-repo.git
+   git clone https://github.com
 
 2. Navega al directorio del proyecto:
 cd nombre-del-repo
