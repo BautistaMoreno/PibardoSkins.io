@@ -2,6 +2,10 @@
 
 ¡Bienvenido a nuestro proyecto llamado PibardoSkins dedicada a los skins de Counter Strike! Este proyecto fue desarrollado utilizando HTML, CSS, React y Node.js.
 
+## Integrantes del proyecto
+
+Moreno Bautista, Oyola Lea, Bellitto Valentino, Rodríguez Tobias, Pastrana Alejo.
+
 ## Descripción
 
 El Sitio Web permite a los usuarios explorar una gran variedad de skins para armas de Counter Strike. Los usuarios pueden ver detalles, ver su valor y poder realizar compras desde la tienda oficial de Steam. Este es nuestro proyecto PibardoSkins🔫.
